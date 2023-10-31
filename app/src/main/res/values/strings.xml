@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">UI_sencilla</string>
+    <string name="edit_message">Introduce el mensaje</string>
+    <string name="button_send">Enviar</string>
+</resources>
