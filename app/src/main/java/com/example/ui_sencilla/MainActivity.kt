@@ -9,15 +9,17 @@ import android.widget.EditText
 
 class MainActivity : AppCompatActivity() {
 
+    //creacion de variables
     private lateinit var txtNombre : EditText
     private lateinit var btnAceptar : Button
 
+    //main general y refencia a dicha activity
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //Para hacer referencia a cada variable
+        //Para poder guardar contenido y usarlo en otro activity
         txtNombre = findViewById(R.id.txtNombre)
         btnAceptar = findViewById(R.id.btnAceptar)
 

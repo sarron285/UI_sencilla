@@ -9,8 +9,6 @@ import android.widget.EditText
 import android.widget.TextView
 
 class SaludoActivity : AppCompatActivity() {
-
-
     private lateinit var txtSaludo : TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,9 +18,10 @@ class SaludoActivity : AppCompatActivity() {
 
         //Obtenemos una referencia a los controles de la interfaz
         txtSaludo = findViewById(R.id.txtSaludo)
+
         //Recuperamos la información pasada en el intent
         val saludo = intent.getStringExtra("NOMBRE")
-        //Construimos el mensaje a mostrar
+        //Construimos el mensaje que mostrar
         txtSaludo.text = "Hola $saludo"
 
 
